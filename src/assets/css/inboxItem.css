@@ -1,0 +1,95 @@
+.inboxItem {
+  display: flex;
+  background-color: transparent;
+  flex-direction: row;
+  padding: 15px;
+  margin: 5px 0;
+  border-radius: 7px;
+}
+
+.inboxItem:hover {
+  cursor: pointer;
+  background-color: #F0F0FB;
+}
+
+.inboxItem__avatar {
+  position: relative;
+  margin-right: 13px;
+}
+
+.inboxItem__photo {
+  height: 45px;
+}
+
+.inboxItem__status {
+  height: 9px;
+  width: 9px;
+  border-radius: 50%;
+  position: absolute;
+  right: 2px;
+  bottom: 5px;
+}
+
+.inboxItem__status--active {
+  background-color: #04E013;
+  box-shadow: 0px 0px 0px 5px rgba(4, 224, 19, .3);
+}
+
+.inboxItem__status--inActive {
+  background-color: #B6B9C3;
+  box-shadow: 0px 0px 0px 5px rgba(182, 185, 195, 0.3);
+}
+
+.inboxItem__informationContainer {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.inboxItem__information {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.inboxItem__information > p {
+  margin: 0;
+}
+
+.inboxItem__username {
+  font-family: 'GothamMedium', serif;
+  color: #495969;
+  font-size: 13px;
+  margin-bottom: 5px !important;
+}
+
+.inboxItem__lastMsg {
+  font-family: 'GothamMedium', serif;
+  color: #9095A4;
+  font-size: 11px;
+}
+
+.inboxItem__extraInformation {
+  display: flex;
+  flex-direction: column;
+  /*justify-content: center;*/
+  align-items: flex-end;
+}
+
+.inboxItem__more {
+  background-color: transparent;
+  border: 0;
+  color: #495969;
+  margin-bottom: 8px;
+}
+
+.inboxItem__more:focus {
+  outline: none;
+  cursor: pointer;
+}
+
+.inboxItem__moreImg {
+  width: 25px;
+}

@@ -1,0 +1,8 @@
+.inbox {
+  display: flex;
+  flex: 0.33;
+  background-color: #F6F6FD;
+  font-family: 'GothamMedium', serif;
+  padding: 15px;
+  flex-direction: column;
+}

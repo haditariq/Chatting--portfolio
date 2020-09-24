@@ -1,0 +1,30 @@
+.searchBar {
+  display: flex;
+  flex-direction: column;
+}
+
+.searchBar__input {
+  background-color: #F0F0FB;
+  border: #707070;
+  border-radius: 7px;
+  padding: 15px;
+  padding-left: 40px;
+  font-family: 'GothamMedium', serif;
+  position: relative;
+  color: #B6B9C3;
+}
+
+.searchBar__input:focus {
+  outline: none;
+}
+
+.searchBar__input::placeholder{
+  color: #B6B9C3;
+}
+
+.searchBar__icon {
+  position: absolute;
+  transform: translate(0, 60%);
+  left: 25px;
+  width: 20px;
+}
