@@ -1,6 +1,7 @@
 .searchBar {
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .searchBar__input {
@@ -8,7 +9,7 @@
   border: #707070;
   border-radius: 7px;
   padding: 15px;
-  padding-left: 40px;
+  padding-left: 45px;
   font-family: 'GothamMedium', serif;
   position: relative;
   color: #B6B9C3;
@@ -25,6 +26,28 @@
 .searchBar__icon {
   position: absolute;
   transform: translate(0, 60%);
-  left: 25px;
+  left: 15px;
   width: 20px;
+}
+
+.searchBar__newChat{
+  position: absolute;
+  transform: translate(0%,16% );
+  right: 1%;
+  top: 0px;
+  border: 0;
+  background-color: transparent;
+}
+
+.searchBar__newChat > img {
+  height: 60px;
+}
+
+.searchBar__newChat:focus{
+  outline: none;
+  cursor: pointer;
+ 
+}
+.searchBar__newChat:hover{
+  opacity: .8;
 }
