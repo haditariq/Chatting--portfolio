@@ -6,12 +6,14 @@
   padding: 15px;
   flex-direction: column;
 }
-.inbox__profileMenu{
+
+.inbox__profileMenu {
   position: absolute;
   left: 20px;
   bottom: 15px;
 }
-.inbox__profileMenuBtn{
+
+.inbox__profileMenuBtn {
   background-color: transparent;
   border: 0;
   display: flex;
@@ -19,37 +21,44 @@
   align-items: center;
 }
 
-.inbox__profileMenuBtn:focus{
+.inbox__profileMenuBtn:focus {
   outline: none;
 }
 
-.inbox__profileMenuBtn > img{
+.inbox__profileMenuBtn > img {
   height: 65px;
   width: 65px;
   margin: 0;
-  padding: 0!important;
+  padding: 0 !important;
 }
 
-.inbox__profileMenu > img:hover{
+.inbox__profileMenu > img:hover {
   cursor: pointer;
   opacity: .8;
 }
 
-.inboxItem__profileMenuDropDown{
+.inboxItem__profileMenuDropDown {
   position: absolute;
   top: 10px;
   left: 80px;
   background-color: white;
-  padding:15px;
+  padding: 15px;
   border-radius: 50%;
   box-shadow: 0px 0px 5px 1px #495969;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.inbox__closeProfileMenuOverlay{
+
+.inbox__closeProfileMenuOverlay {
   position: absolute;
   height: 60px;
   width: 60px;
   left: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .inbox {
+    width: 1100px !important;
+  }
 }

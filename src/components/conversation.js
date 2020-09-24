@@ -1,16 +1,18 @@
-import React, {useEffect} from 'react';
+import React, { useEffect, useState } from "react";
 import "../assets/css/conversation.css";
 import ConversationItem from "./conversationItem";
 import conversationData from "../datalayer/conversation";
 import emojiIcon from "../assets/icons/emojis.png";
 import sendIcon from "../assets/icons/send.png";
+import menuIcon from "../assets/icons/menu.png";
+import crossIcon from "../assets/icons/cross.png";
 
-function Conversation(props) {
-
-  useEffect(()=>{
-    const conversation =document.getElementById("conversation");
+function Conversation({ toggleInbox, status, inboxToggle }) {
+  const [toggle, setToggle] = useState(false);
+  useEffect(() => {
+    const conversation = document.getElementById("conversation");
     conversation.style.maxHeight = window.innerHeight + "px";
-  },[]);
+  }, []);
 
   const renderConversation = () => {
     return conversationData.conversation.map(item => (
@@ -25,6 +27,13 @@ function Conversation(props) {
   return (
     <div className={"conversation"} id={"conversation"}>
       <div className="conversation__TopBar">
+        <button onClick={toggleInbox} className={"conversationT__inboxToggle"}>
+          {!status ? (
+            <img src={menuIcon} alt="" />
+          ) : (
+            <img src={crossIcon} alt="" />
+          )}
+        </button>
         <p className={"conversation__username"}>Micheal Wong</p>
         <div
           className={`conversation__status ${
@@ -34,12 +43,15 @@ function Conversation(props) {
           }`}
         />
       </div>
-
-        <div className="conversationBlock">{renderConversation()}</div>
+      <div className="conversationBlock">{renderConversation()}</div>
 
       <div className="conversationBreak" />
       <div className="conversation__payloadFieldContainer">
-        <input type="text" className="conversation__payloadField" placeholder={`Message Micheal ....`}/>
+        <input
+          type="text"
+          className="conversation__payloadField"
+          placeholder={`Message Micheal ....`}
+        />
         <button className={"conversation__payloadBtn"}>
           <img src={sendIcon} alt="" className={"conversation__payloadIcons"} />
         </button>

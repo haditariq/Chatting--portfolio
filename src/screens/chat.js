@@ -1,15 +1,19 @@
-import React from 'react';
-import Inbox from '../components/inbox';
+import React, { useEffect, useState } from "react";
+import Inbox from "../components/inbox";
 
 // assets
-import '../assets/css/chat.css'
-import Conversation from '../components/conversation';
+import "../assets/css/chat.css";
+import Conversation from "../components/conversation";
 
-function Chat (props) {
+function Chat(props) {
+  const [inboxToggle, setInboxToggle] = useState(true);
+  const onClickToggle = ()=>{
+    setInboxToggle(!inboxToggle)
+  }
   return (
-    <div className={'chat'}>
-      {/*<Inbox/>*/}
-      <Conversation/>
+    <div className={"chat"}>
+      {inboxToggle && <Inbox />}
+      <Conversation toggleInbox={onClickToggle} status={inboxToggle} inboxToggle={inboxToggle} />
     </div>
   );
 }
