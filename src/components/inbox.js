@@ -3,6 +3,7 @@ import "../assets/css/inbox.css";
 import FilterSearchBar from "./filterSearchBar";
 import InboxItem from "./inboxItem";
 import inboxData from "../datalayer/inbox";
+import InboxFilter from './inboxFilter';
 
 function Inbox(props) {
   const renderInboxItem = () => {
@@ -19,7 +20,7 @@ function Inbox(props) {
   return (
     <div className={"inbox"}>
       <FilterSearchBar />
-      {/*switchers*/}
+      <InboxFilter/>
       {renderInboxItem()}
     </div>
   );

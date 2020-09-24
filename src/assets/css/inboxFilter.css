@@ -1,0 +1,29 @@
+.inboxFilter {
+  border-bottom: 1px solid #F0F0FB;
+  display: flex;
+  flex-direction: row;
+}
+
+.inboxFilter__item {
+  display: flex;
+  flex: .20;
+  color: #9095A4;
+  padding: 15px;
+  margin: 0 5px;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.inboxFilter__item:hover{
+  cursor: pointer;
+  opacity: .8;
+}
+.inboxFilter__border--active {
+  border: 2px solid #8472FC;
+  border-top-left-radius: 13px;
+  border-top-right-radius: 13px;
+}
+.inboxFilter__text{
+  font-size: 11px;
+}
