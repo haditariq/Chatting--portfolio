@@ -1,0 +1,32 @@
+.conversationItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 5px 0px;
+  /*flex-direction: row-reverse;*/
+}
+
+.conversationItem__photo {
+  height: 50px;
+  margin: 0 10px;
+}
+
+.conversationItem__payloadContainer > p {
+  margin: 0;
+}
+
+.conversationItem__payload {
+  background-color: #7175F9;
+  padding: 10px;
+  border-radius: 7px;
+  font-size: 11px;
+  color: #FFFFFF;
+  font-family: 'GothamMedium', serif;
+}
+
+.conversationItem__info {
+  font-size: 11px;
+  color: #707070;
+  font-family: 'GothamMedium', serif;
+  margin-bottom: 5px !important;
+}
