@@ -3,7 +3,14 @@
   align-items: center;
   margin-bottom: 10px;
   padding: 5px 0px;
-  /*flex-direction: row-reverse;*/
+}
+
+.conversationItem__directionStart{
+  justify-content: flex-start;
+}
+
+.conversationItem__directionEnd{
+  justify-content: flex-end;
 }
 
 .conversationItem__photo {
@@ -16,12 +23,19 @@
 }
 
 .conversationItem__payload {
-  background-color: #7175F9;
   padding: 10px;
   border-radius: 7px;
   font-size: 11px;
   color: #FFFFFF;
   font-family: 'GothamMedium', serif;
+}
+.conversationItem__payloadDirectionStart{
+  background-color: #F0F0FB;
+  color: #9095A4;
+  
+}
+.conversationItem__payloadDirectionEnd{
+  background-color: #7175F9;
 }
 
 .conversationItem__info {

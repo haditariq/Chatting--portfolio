@@ -1,0 +1,46 @@
+{
+  "conversation": [
+    {
+      "payload": "I thought this would be an awesome way to interact with the interface.",
+      "username": "Micheal Wong",
+      "sent_by": "B",
+      "sent_at": "7:30 PM"
+    },
+    {
+      "payload": "I agree! It definitely produces a better user experience.",
+      "username": "Micheal Wong",
+      "sent_by": "A",
+      "sent_at": "7:31 PM"
+    },
+    {
+      "payload": "Did you get that awesomesauce I sent?",
+      "username": "Micheal Wong",
+      "sent_by": "B",
+      "sent_at": "7:31 PM"
+    },
+    {
+      "payload": "I did, our whole team rubbed it all over their bread.",
+      "username": "Micheal Wong",
+      "sent_by": "A",
+      "sent_at": "7:31 PM"
+    },
+    {
+      "payload": "It was delicious!",
+      "username": "Micheal Wong",
+      "sent_by": "A",
+      "sent_at": "7:31 PM"
+    },
+    {
+      "payload": "Awesome",
+      "username": "Micheal Wong",
+      "sent_by": "B",
+      "sent_at": "7:31 PM"
+    },
+    {
+      "payload": "Yeah, we all loved it!",
+      "username": "Micheal Wong",
+      "sent_by": "A",
+      "sent_at": "7:31 PM"
+    }
+  ]
+}
