@@ -1,0 +1,30 @@
+.profileMenuItem {
+  display: flex;
+  color: #707070;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  justify-content: center;
+  border:0;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+}
+
+.profileMenuItem > img {
+  height: 20px;
+}
+
+.profileMenuItem > p {
+  font-size: 13px;
+  font-family: 'GothamMedium', serif;
+}
+
+.profileMenuItem:hover{
+  opacity: .8;
+  cursor: pointer;
+}
+
+.profileMenuItem:focus{
+  outline: none;
+}
