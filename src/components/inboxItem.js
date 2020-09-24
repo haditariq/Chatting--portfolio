@@ -19,7 +19,7 @@ function InboxItem({ url, username, status, lastMessage, sent_at, unseen = null 
         <div className="inboxItem__information">
           <div className={"inboxItem__usernameContainer"}>
             <p className={"inboxItem__username"}>{username}</p>
-            {unseen != null && unseen != 0 && <span className="inboxItem__unseenBadge">{unseen}</span>}
+            {unseen != null && unseen != 0 && <p className="inboxItem__unseenBadge">{unseen}</p>}
           </div>
           <p className={"inboxItem__lastMsg"}>{lastMessage}</p>
         </div>
