@@ -6,7 +6,8 @@
       "status": true,
       "lastMessage": "Yeah, we all loved it!",
       "sent_at": "7:30 PM",
-      "unseen": 0
+      "unseen": 0,
+      "active": true
     },
     {
       "url": "../assets/images/user_profile1.png",
@@ -14,7 +15,8 @@
       "status": false,
       "lastMessage": "We need to re-asses our strategy.",
       "sent_at": "7:30 PM",
-      "unseen": 5
+      "unseen": 5,
+      "active": false
     }
   ]
 }

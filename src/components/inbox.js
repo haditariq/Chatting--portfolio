@@ -14,6 +14,7 @@ function Inbox(props) {
       lastMessage={item.lastMessage}
       sent_at={item.sent_at}
       unseen={item.unseen}
+      active={item.active}
     />);
   };
 

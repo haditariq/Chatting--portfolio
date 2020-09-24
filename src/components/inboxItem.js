@@ -3,9 +3,9 @@ import "../assets/css/inboxItem.css";
 import userProfile1 from "../assets/images/user_profile1.png";
 import more from "../assets/icons/more.png";
 
-function InboxItem({ url, username, status, lastMessage, sent_at, unseen = null }) {
+function InboxItem({ url, username, status, lastMessage, sent_at, unseen = null, active }) {
   return (
-    <div className={"inboxItem"}>
+    <div className={`inboxItem ${active && "inbox--active"}`}>
       <div className="inboxItem__avatar">
         <img src={userProfile1} alt="" className={"inboxItem__photo"} />
         <div

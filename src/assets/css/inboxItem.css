@@ -6,7 +6,9 @@
   margin: 5px 0;
   border-radius: 7px;
 }
-
+.inbox--active{
+  background-color: #F0F0FB;
+}
 .inboxItem:hover {
   cursor: pointer;
   background-color: #F0F0FB;
