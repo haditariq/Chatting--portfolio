@@ -3,7 +3,7 @@ import '../assets/css/conversation.css'
 
 function Conversation (props) {
   return (
-    <div className={'conversation'}>conversation</div>
+    <div className={'conversation'}>CONVERSATIONS COMING SOON!</div>
   );
 }
 

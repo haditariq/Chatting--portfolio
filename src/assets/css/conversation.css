@@ -1,5 +1,8 @@
 .conversation{
   display: flex;
   flex: 1;
-  background-color: red
+  background-color: #FFFFFF;
+  justify-content: center;
+  align-items: center;
+  font-family: 'GothamMedium', serif;
 }
