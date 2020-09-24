@@ -16,7 +16,7 @@ function FilterSearchBar(props) {
       />
       <img className="searchBar__icon" src={searchBarIcon} />
 
-      <button className={"searchBar__newChat"} onClick={()=>onClickNewChat()}>
+      <button className={"searchBar__newChat"} onClick={() => onClickNewChat()}>
         <img src={add} alt="" />
       </button>
     </div>

@@ -58,11 +58,32 @@
   margin: 0;
 }
 
+.inboxItem__usernameContainer{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.inboxItem__unseenBadge{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 9px;
+  padding: 4px;
+  background-color: #8472FC;
+  color: #FFFFFF;
+  border-radius: 50%;
+  /*margin-top: 10px;*/
+  margin-left: 2px;
+
+}
+
 .inboxItem__username {
   font-family: 'GothamMedium', serif;
   color: #495969;
   font-size: 13px;
   margin-bottom: 5px !important;
+  margin-top: 0;
 }
 
 .inboxItem__lastMsg {

@@ -5,14 +5,16 @@
       "username": "Michael Wong",
       "status": true,
       "lastMessage": "Yeah, we all loved it!",
-      "sent_at": "7:30 PM"
+      "sent_at": "7:30 PM",
+      "unseen": 0
     },
     {
       "url": "../assets/images/user_profile1.png",
       "username": "Gus Fring",
       "status": false,
       "lastMessage": "We need to re-asses our strategy.",
-      "sent_at": "7:30 PM"
+      "sent_at": "7:30 PM",
+      "unseen": 5
     }
   ]
 }
