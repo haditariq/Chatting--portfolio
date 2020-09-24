@@ -28,6 +28,7 @@
   font-size: 11px;
   color: #FFFFFF;
   font-family: 'GothamMedium', serif;
+  line-height: 13px;
 }
 .conversationItem__payloadDirectionStart{
   background-color: #F0F0FB;

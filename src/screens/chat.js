@@ -8,7 +8,7 @@ import Conversation from '../components/conversation';
 function Chat (props) {
   return (
     <div className={'chat'}>
-      <Inbox/>
+      {/*<Inbox/>*/}
       <Conversation/>
     </div>
   );

@@ -4,9 +4,9 @@ import user_profile1 from "../assets/images/user_profile1.png";
 function ConversationItem({payload, username, sent_at, sent_by}) {
   return (
     <div className={`conversationItem ${sent_by !== "A" ? "conversationItem__directionStart" : "conversationItem__directionEnd"}`}>
-      <img src={user_profile1} alt="" className={"conversationItem__photo"} />
+      {sent_by === "A" && <img src={user_profile1} alt="" className={"conversationItem__photo"} />}
       <div className={"conversationItem__payloadContainer"}>
-        <p className={"conversationItem__info"}>{username}, {sent_at}</p>
+        <p className={"conversationItem__info"}>{sent_by === "A" ? username: "You"}, {sent_at}</p>
         <p className={`conversationItem__payload ${sent_by !== "A" ? "conversationItem__payloadDirectionStart" : "conversationItem__payloadDirectionEnd"}`}>
           {payload}
         </p>
