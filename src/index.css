@@ -21,3 +21,7 @@ code {
   font-family: "GothamMedium";
   src: url("assets/fonts/Gotham-Font/GothamMedium.ttf");
 }
+
+*:focus{
+  outline: none;
+}

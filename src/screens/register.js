@@ -2,10 +2,14 @@ import React, { useEffect, useState } from "react";
 import { connect } from "react-redux";
 import { register } from "../redux/auth/actions";
 import { Redirect } from "react-router-dom";
+import bg from "../assets/images/Rectangle 6.png";
+import nextIcon from "../assets/icons/next.png";
+import '../assets/css/register.css';
+
+
 function Register({ reduxRegister, isAuthenticated, loading, username, _id }) {
   const [user, setUsername] = useState("");
-  const onSubmit = e => {
-    e.preventDefault();
+  const onSubmit = () => {
     reduxRegister({ username: user });
     setUsername("");
   };
@@ -15,16 +19,23 @@ function Register({ reduxRegister, isAuthenticated, loading, username, _id }) {
   }
 
   return (
-    <div className={"register"}>
-      <form onSubmit={onSubmit}>
+    <div
+      className={"register"}
+      style={{ backgroundImage: `url("${bg}")` }}
+    >
+      <h3 className={"register__label"}>Let's Register!!</h3>
+      <form onSubmit={(e)=>e.preventDefault()} className={"register__form"}>
         <input
           type="text"
           className={"register__input"}
           name={"username"}
           onChange={e => setUsername(e.target.value)}
           value={user}
+          placeholder={"Enter username to get registered"}
         />
-        <input type="submit" />
+        <button className={"register__registerBtn"} onClick={onSubmit}>
+          <img src={nextIcon} alt="" className={"register__nextIcon"}/>
+        </button>
       </form>
     </div>
   );
