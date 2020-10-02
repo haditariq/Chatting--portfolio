@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "../assets/css/conversation.css";
 import ConversationItem from "./conversationItem";
-import conversationData from "../datalayer/conversation";
+import conversationData from "../redux/conversation";
 import emojiIcon from "../assets/icons/emojis.png";
 import sendIcon from "../assets/icons/send.png";
 import menuIcon from "../assets/icons/menu.png";

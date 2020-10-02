@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "../assets/css/inbox.css";
 import FilterSearchBar from "./filterSearchBar";
 import InboxItem from "./inboxItem";
-import inboxData from "../datalayer/inbox";
+import inboxData from "../redux/inbox";
 import InboxFilter from "./inboxFilter";
 import user_profile1 from "../assets/images/user_profile1.png";
 import closeMenuOverlay from "../assets/icons/add.png";
