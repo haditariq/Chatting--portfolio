@@ -7,7 +7,7 @@ import InboxFilter from "./inboxFilter";
 import user_profile1 from "../assets/images/user_profile1.png";
 import closeMenuOverlay from "../assets/icons/add.png";
 import ProfileMenuItem from "./profileMenuItem";
-function  Inbox(props) {
+function  Inbox({onCreateNewChat}) {
   const [showProfileMenu, setProfileMenu] = useState(true);
   const onClickProfile = () => {
     setProfileMenu(!showProfileMenu)
@@ -29,7 +29,7 @@ function  Inbox(props) {
 
   return (
     <div className={"inbox"}>
-      <FilterSearchBar />
+      <FilterSearchBar onCreateNewChatFromInbox={onCreateNewChat}/>
       <InboxFilter />
       {renderInboxItem()}
       <div className={"inbox__profileMenu"}>

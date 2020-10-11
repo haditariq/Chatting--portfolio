@@ -3,7 +3,7 @@ import React from "react";
 import "../assets/css/filterSearchBar.css";
 import searchBarIcon from "../assets/icons/search.png";
 import add from "../assets/icons/add.png";
-function FilterSearchBar(props) {
+function FilterSearchBar({onCreateNewChatFromInbox}) {
   const onClickNewChat = () => {
     alert("Action: New Chat");
   };
@@ -16,7 +16,7 @@ function FilterSearchBar(props) {
       />
       <img className="searchBar__icon" src={searchBarIcon} />
 
-      <button className={"searchBar__newChat"} onClick={() => onClickNewChat()}>
+      <button className={"searchBar__newChat"} onClick={() => onCreateNewChatFromInbox(true)}>
         <img src={add} alt="" />
       </button>
     </div>
