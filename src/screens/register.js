@@ -1,20 +1,26 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useState } from "react";
 import { connect } from "react-redux";
 import { register } from "../redux/auth/actions";
 import { Redirect } from "react-router-dom";
 import bg from "../assets/images/Rectangle 6.png";
 import nextIcon from "../assets/icons/next.png";
 import '../assets/css/register.css';
-
+import {AuthContext} from '../context/auth-context';
 
 function Register({ reduxRegister, isAuthenticated, loading, username, _id }) {
   const [user, setUsername] = useState("");
+  const authContext = useContext(AuthContext)
+
   const onSubmit = () => {
     reduxRegister({ username: user });
+    authContext.login()
     setUsername("");
   };
 
-  if (isAuthenticated) {
+  // if (isAuthenticated) {
+  //   return <Redirect to={"inbox"} />;
+  // }
+  if (authContext.isAuth) {
     return <Redirect to={"inbox"} />;
   }
 

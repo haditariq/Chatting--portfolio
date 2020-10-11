@@ -1,3 +1,3 @@
-export const register = ({username}) => dispatch =>{
+export const alert = ({msg}) => dispatch =>{
 
 }
