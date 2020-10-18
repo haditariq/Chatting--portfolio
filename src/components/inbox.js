@@ -14,8 +14,9 @@ function  Inbox({onCreateNewChat}) {
   };
 
   const renderInboxItem = () => {
-    return inboxData.users.map(item => (
+    return inboxData.users.map((item,idx) => (
       <InboxItem
+        key={idx}
         url={item.url}
         username={item.username}
         status={item.status}

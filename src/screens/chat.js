@@ -8,6 +8,79 @@ import "../assets/css/chat.css";
 import Conversation from "../components/conversation";
 import CreateChatModal from "../components/createChatModal";
 
+let users = [
+  {
+    name: "James"
+  },
+  {
+    name: "John Doe"
+  },
+
+  {
+    name: "Micheal"
+  },
+  {
+    name: "James"
+  },
+  {
+    name: "John Doe"
+  },
+
+  {
+    name: "Micheal"
+  },
+  {
+    name: "James"
+  },
+  {
+    name: "John Doe"
+  },
+
+  {
+    name: "Micheal"
+  },
+  {
+    name: "James"
+  },
+  {
+    name: "John Doe"
+  },
+
+  {
+    name: "Micheal"
+  },
+  {
+    name: "James"
+  },
+  {
+    name: "John Doe"
+  },
+
+  {
+    name: "Micheal"
+  },
+  {
+    name: "James"
+  },
+  {
+    name: "John Doe"
+  },
+
+  {
+    name: "Micheal"
+  },
+  {
+    name: "James"
+  },
+  {
+    name: "John Doe"
+  },
+
+  {
+    name: "Micheal"
+  }
+];
+
 function Chat(props) {
   const [inboxToggle, setInboxToggle] = useState(true);
   const [socket, setSocket] = useState();
@@ -19,21 +92,27 @@ function Chat(props) {
     socket.emit("register", { USER_ID: "Asfdasf" });
   }, []);
 
-  const onClickToggle = () => {
+  const onInboxToggle = () => {
     setInboxToggle(!inboxToggle);
+  };
+
+  const onCloseNewChatModal = () => {
+    setCreateChatModal(!inboxToggle);
   };
 
   return (
     <div className={"chat"}>
       {createChatModal && (
-
-          <CreateChatModal />
+        <CreateChatModal
+          registeredUsers={users}
+          createNewChatModal={() => onCloseNewChatModal()}
+        />
       )}
       {inboxToggle && (
         <Inbox onCreateNewChat={() => setCreateChatModal(true)} />
       )}
       <Conversation
-        toggleInbox={onClickToggle}
+        toggleInbox={onInboxToggle}
         status={inboxToggle}
         inboxToggle={inboxToggle}
       />

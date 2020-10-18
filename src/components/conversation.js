@@ -8,15 +8,16 @@ import menuIcon from "../assets/icons/menu.png";
 import crossIcon from "../assets/icons/cross.png";
 
 function Conversation({ toggleInbox, status, inboxToggle }) {
-  const [toggle, setToggle] = useState(false);
+  // const [toggle, setToggle] = useState(false);
   useEffect(() => {
     const conversation = document.getElementById("conversation");
     conversation.style.maxHeight = window.innerHeight + "px";
   }, []);
 
   const renderConversation = () => {
-    return conversationData.conversation.map(item => (
+    return conversationData.conversation.map((item,idx) => (
       <ConversationItem
+        key={idx}
         payload={item.payload}
         username={item.username}
         sent_by={item.sent_by}

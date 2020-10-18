@@ -1,26 +1,87 @@
 .newCreateChatModal {
-  flex:1;
-  display: flex;
-  position: absolute;
-  justify-content: center;
-  align-items: center;
-  /*transform: translate(100%,100%);*/
-  right: 50%;
-  top: 50%;
-  padding: 15px;
-  background-color: #ffffff;
-  box-shadow: 0px 2px 2px 1px rgba(182, 185, 195, 0.3);
-}
-.newCreateChatModal__container{
   flex: 1;
-  display: flex;
-  position: relative;
+  position: absolute;
+  transform: translate(50%, 0%);
+  /*right: 50%;*/
+  top: 20%;
+  padding: 15px;
+  background-color: #FFFFFF;
+  box-shadow: 0px 0px 15px 15px rgba(182, 185, 195, 0.3);
+  width: 50%;
+  min-height: 50%;
+  border-radius: 5px;
+  height: 1px;
+  overflow-y: scroll;
 }
 
-.newCreateChatModal__filterDrop{
+.newCreateChatModal__searchCloseContainer{
+  display: flex;
+  flex-direction: row;
+}
+
+.newCreateChatModal__container {
+  position: relative;
   flex: 1;
-  position: absolute;
-  height: 20px;
-  border: 1px solid blue;
+  display: flex;
+}
+
+.newContainerChatModal_search {
+  width: -webkit-fill-available;
+  background-color: #F0F0FB;
+  border: #707070;
+  border-radius: 7px;
+  padding: 15px;
+  padding-left: 45px;
+  font-family: 'GothamMedium', serif;
+  position: relative;
+  color: #B6B9C3;
+}
+
+.newCreateChatModal__filterDrop {
+  margin-top: 10px;
+  width: -webkit-fill-available;
   bottom: 0;
+  border-radius: 7px;
+
+}
+
+.newCreateChatModal__filterDrop > ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.newCreateChatModal__filterDrop > ul li {
+  padding: 8px;
+  margin: 5px;
+  background-color: rgba(240, 240, 251, 0.46);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 7px;
+}
+
+.newCreateChatModal__filterDrop > ul li:hover {
+  cursor: pointer;
+  background-color: #F0F0FB;
+}
+
+.newCreateChatModal__filterDrop > ul li img {
+  height: 40px;
+  width: 40px;
+  margin: 0;
+  padding: 0 !important;
+  margin-right: 10px;
+}
+
+.newCreateChatModal__searchModal--close{
+  background-color: #F0F0FB;
+  border-radius: 7px;
+  border: 0;
+  padding: 0 15px;
+}
+
+.newCreateChatModal__searchModal--close:hover{
+  opacity: .7;
+  cursor: pointer;
 }
